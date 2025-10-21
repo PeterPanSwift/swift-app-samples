@@ -1,0 +1,93 @@
+{
+    "samples": [
+        {
+            "title": "Grateful Moments - Develop in Swift Tutorials",
+            "technologies": [
+                "SwiftUI",
+                "SwiftData"
+            ],
+            "platform": "iOS 26",
+            "links": {
+                "code": "https://github.com/PeterPanSwift/Grateful-Moments",
+                "documentation": "https://developer.apple.com/tutorials/develop-in-swift/welcome-to-app-development"
+            },
+            "scrreenshots": [
+                "pic6.png",
+                "pic7.png",
+                "pic8.png",
+                "pic9.png",
+                "pic10.png"
+            ]
+        },
+        {
+            "title": "Code along with the Foundation Models framework",
+            "technologies": [
+                "SwiftUI",
+                "Foundation Models"
+            ],
+            "platform": "iOS 26",
+            "links": {
+                "code": "https://github.com/PeterPanSwift/FoundationModelsCodeAlong",
+                "documentation": "https://developer.apple.com/events/resources/code-along-205",
+                "video": "https://developer.apple.com/videos/play/meet-with-apple/205"
+            },
+            "scrreenshots": [
+                "pic3.png",
+                "pic4.png",
+                "pic5.png"
+            ]
+        },
+        {
+            "title": "Generate dynamic game content with guided generation and tools",
+            "technologies": [
+                "SwiftUI",
+                "Foundation Models"
+            ],
+            "platform": "iOS 26",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/fc8c5a7faf06/GenerateDynamicGameContentWithGuidedGenerationAndTools.zip",
+                "documentation": "https://developer.apple.com/documentation/foundationmodels/generate-dynamic-game-content-with-guided-generation-and-tools",
+                "video": "https://developer.apple.com/videos/play/wwdc2025/301/"
+            },
+            "scrreenshots": [
+                "pic1.png",
+                "pic2.png"
+            ]
+        },
+        {
+            "title": "Scrumdinger - App Dev Tutorials",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 18",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/0ff7da4e712c03c6661be6808c8adadd/TranscribingSpeechToText.zip",
+                "documentation": "https://developer.apple.com/tutorials/app-dev-training/getting-started-with-scrumdinger"
+            },
+            "scrreenshots": [
+                "pic16.png",
+                "pic17.png",
+                "pic18.png",
+                "pic19.png"
+            ]
+        },
+        {
+            "title": "Landmarks - SwiftUI Tutorials",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 17",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/25e664e912a551100ab62a48a0f263c4/CreatingAmacOSApp.zip",
+                "documentation": "https://developer.apple.com/tutorials/swiftui"
+            },
+            "scrreenshots": [
+                "pic11.png",
+                "pic12.png",
+                "pic13.png",
+                "pic14.png",
+                "pic15.png"
+            ]
+        }
+    ]
+}
