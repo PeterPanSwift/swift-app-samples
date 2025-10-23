@@ -1,5 +1,7 @@
 // Global variable to store all samples
 let allSamples = [];
+let currentFrameworkFilter = 'all';
+let currentVersionFilter = 'all';
 
 // Load and display sample data
 async function loadSamples() {
@@ -9,6 +11,7 @@ async function loadSamples() {
         allSamples = data.samples;
         displaySamples(allSamples);
         setupSearch();
+        setupFilters();
     } catch (error) {
         console.error('Error loading data:', error);
         document.getElementById('samples-container').innerHTML =
@@ -32,37 +35,92 @@ function displaySamples(samples) {
     });
 }
 
-// Setup search functionality
-function setupSearch() {
+// Setup filter functionality
+function setupFilters() {
+    // Framework filter buttons
+    const frameworkButtons = document.querySelectorAll('[data-filter]');
+    frameworkButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Update active state
+            frameworkButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // Update current filter
+            currentFrameworkFilter = button.dataset.filter;
+            applyFilters();
+        });
+    });
+
+    // Version filter buttons
+    const versionButtons = document.querySelectorAll('[data-version]');
+    versionButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Update active state
+            versionButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // Update current filter
+            currentVersionFilter = button.dataset.version;
+            applyFilters();
+        });
+    });
+}
+
+// Apply all filters
+function applyFilters() {
     const searchInput = document.getElementById('search-input');
-    const searchResults = document.getElementById('search-results');
+    const searchQuery = searchInput.value.toLowerCase().trim();
 
-    searchInput.addEventListener('input', (e) => {
-        const query = e.target.value.toLowerCase().trim();
+    let filteredSamples = allSamples;
 
-        if (query === '') {
-            displaySamples(allSamples);
-            searchResults.textContent = '';
-            return;
-        }
+    // Apply framework filter
+    if (currentFrameworkFilter !== 'all') {
+        filteredSamples = filteredSamples.filter(sample =>
+            sample.technologies.includes(currentFrameworkFilter)
+        );
+    }
 
-        // Filter samples by title or technologies
-        const filteredSamples = allSamples.filter(sample => {
-            const titleMatch = sample.title.toLowerCase().includes(query);
+    // Apply version filter
+    if (currentVersionFilter !== 'all') {
+        filteredSamples = filteredSamples.filter(sample =>
+            sample.platform === currentVersionFilter
+        );
+    }
+
+    // Apply search filter
+    if (searchQuery !== '') {
+        filteredSamples = filteredSamples.filter(sample => {
+            const titleMatch = sample.title.toLowerCase().includes(searchQuery);
             const techMatch = sample.technologies.some(tech =>
-                tech.toLowerCase().includes(query)
+                tech.toLowerCase().includes(searchQuery)
             );
             return titleMatch || techMatch;
         });
+    }
 
-        displaySamples(filteredSamples);
+    displaySamples(filteredSamples);
+    updateSearchResults(filteredSamples.length, searchQuery);
+}
 
-        // Show search results count
-        if (filteredSamples.length > 0) {
-            searchResults.textContent = `Found ${filteredSamples.length} sample${filteredSamples.length > 1 ? 's' : ''}`;
-        } else {
-            searchResults.textContent = 'No samples found';
-        }
+// Update search results display
+function updateSearchResults(count, query) {
+    const searchResults = document.getElementById('search-results');
+
+    if (query === '' && currentFrameworkFilter === 'all' && currentVersionFilter === 'all') {
+        searchResults.textContent = '';
+    } else if (count > 0) {
+        searchResults.textContent = `Found ${count} sample${count > 1 ? 's' : ''}`;
+    } else {
+        searchResults.textContent = 'No samples found';
+    }
+}
+
+// Setup search functionality
+function setupSearch() {
+    const searchInput = document.getElementById('search-input');
+
+    searchInput.addEventListener('input', () => {
+        applyFilters();
     });
 }
 
