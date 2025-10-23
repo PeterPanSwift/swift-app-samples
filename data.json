@@ -235,6 +235,22 @@
                 "pic15.png"
             ],
             "basic": true
+        },
+        {
+            "title": "Choose Your Own Story - Sample Apps Tutorials",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 16",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/559aee5b8a5a32821bb80db28f234276/ChooseYourOwnStory.zip",
+                "documentation": "https://developer.apple.com/tutorials/sample-apps/chooseyourownstory"
+            },
+            "scrreenshots": [
+                "pic40.png",
+                "pic41.png"
+            ],
+            "basic": true
         }
     ]
 }
