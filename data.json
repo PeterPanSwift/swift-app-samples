@@ -30,6 +30,24 @@
             ]
         },
         {
+            "title": "Landmarks: Building an app with Liquid Glass",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 26",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/5494b10f5cc7/LandmarksBuildingAnAppWithLiquidGlass.zip",
+                "documentation": "https://developer.apple.com/documentation/SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass"
+            },
+            "scrreenshots": [
+                "pic25.png",
+                "pic26.png",
+                "pic27.png",
+                "pic28.png",
+                "pic29.png"
+            ]
+        },
+        {
             "title": "Code along with the Foundation Models framework",
             "technologies": [
                 "SwiftUI",
