@@ -2,6 +2,7 @@
 let allSamples = [];
 let currentFrameworkFilter = 'all';
 let currentVersionFilter = 'all';
+let currentLevelFilter = 'all';
 
 // Load and display sample data
 async function loadSamples() {
@@ -64,6 +65,20 @@ function setupFilters() {
             applyFilters();
         });
     });
+
+    // Level filter buttons
+    const levelButtons = document.querySelectorAll('[data-level]');
+    levelButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Update active state
+            levelButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // Update current filter
+            currentLevelFilter = button.dataset.level;
+            applyFilters();
+        });
+    });
 }
 
 // Apply all filters
@@ -87,6 +102,18 @@ function applyFilters() {
         );
     }
 
+    // Apply level filter
+    if (currentLevelFilter !== 'all') {
+        filteredSamples = filteredSamples.filter(sample => {
+            if (currentLevelFilter === 'basic') {
+                return sample.basic === true;
+            } else if (currentLevelFilter === 'advanced') {
+                return !sample.basic || sample.basic === false;
+            }
+            return true;
+        });
+    }
+
     // Apply search filter
     if (searchQuery !== '') {
         filteredSamples = filteredSamples.filter(sample => {
@@ -106,7 +133,7 @@ function applyFilters() {
 function updateSearchResults(count, query) {
     const searchResults = document.getElementById('search-results');
 
-    if (query === '' && currentFrameworkFilter === 'all' && currentVersionFilter === 'all') {
+    if (query === '' && currentFrameworkFilter === 'all' && currentVersionFilter === 'all' && currentLevelFilter === 'all') {
         searchResults.textContent = '';
     } else if (count > 0) {
         searchResults.textContent = `Found ${count} sample${count > 1 ? 's' : ''}`;

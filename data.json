@@ -27,7 +27,8 @@
                     "title": "Wavy Rhythm with sin & cos",
                     "link": "https://medium.com/@apppeterpan/372046530f73"
                 }
-            ]
+            ],
+            "basic": true
         },
         {
             "title": "Landmarks: Building an app with Liquid Glass",
@@ -45,7 +46,8 @@
                 "pic27.png",
                 "pic28.png",
                 "pic29.png"
-            ]
+            ],
+            "basic": false
         },
         {
             "title": "Code along with the Foundation Models framework",
@@ -63,7 +65,8 @@
                 "pic3.png",
                 "pic4.png",
                 "pic5.png"
-            ]
+            ],
+            "basic": false
         },
         {
             "title": "Generate dynamic game content with guided generation and tools",
@@ -86,7 +89,8 @@
                     "title": "Character Dialogue Animation",
                     "link": "https://apppeterpan.medium.com/76c2ba7fe84f"
                 }
-            ]
+            ],
+            "basic": false
         },
         {
             "title": "SwiftSticker - Code-along: Elevate an app with Swift concurrency",
@@ -110,7 +114,8 @@
                 {
                     "title": "Image subject extraction"
                 }
-            ]
+            ],
+            "basic": false
         },
         {
             "title": "Alphabetizer - Develop in Swift Tutorials",
@@ -136,7 +141,8 @@
                     "title": "Card flip animation with rotation3DEffect",
                     "link": "https://medium.com/@apppeterpan/560c752ce9e7"
                 }
-            ]
+            ],
+            "basic": true
         },
         {
             "title": "Scrumdinger - App Dev Tutorials",
@@ -153,7 +159,8 @@
                 "pic17.png",
                 "pic18.png",
                 "pic19.png"
-            ]
+            ],
+            "basic": true
         },
         {
             "title": "Earthquakes - App Dev Tutorials",
@@ -171,7 +178,8 @@
                 "pic35.png",
                 "pic36.png",
                 "pic37.png"
-            ]
+            ],
+            "basic": true
         },
         {
             "title": "Destination Video",
@@ -189,7 +197,8 @@
                 "pic32.png",
                 "pic33.png",
                 "pic34.png"
-            ]
+            ],
+            "basic": false
         },
         {
             "title": "Today - App Dev Tutorials",
@@ -205,7 +214,8 @@
                 "pic22.png",
                 "pic23.png",
                 "pic24.png"
-            ]
+            ],
+            "basic": true
         },
         {
             "title": "Landmarks - SwiftUI Tutorials",
@@ -223,7 +233,8 @@
                 "pic13.png",
                 "pic14.png",
                 "pic15.png"
-            ]
+            ],
+            "basic": true
         }
     ]
 }
