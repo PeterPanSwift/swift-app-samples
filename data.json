@@ -130,6 +130,22 @@
             ]
         },
         {
+            "title": "Earthquakes - App Dev Tutorials",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 18",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/e4612a54be36741949392f74d6c8b3e9/AddingTheDetailView.zip",
+                "documentation": "https://developer.apple.com/tutorials/app-dev-training/getting-started-with-earthquakes"
+            },
+            "scrreenshots": [
+                "pic35.png",
+                "pic36.png",
+                "pic37.png"
+            ]
+        },
+        {
             "title": "Destination Video",
             "technologies": [
                 "SwiftUI"
