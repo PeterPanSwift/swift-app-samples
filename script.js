@@ -153,11 +153,57 @@ function createSampleCard(sample, index) {
     });
     card.appendChild(techContainer);
 
+    // Screenshot gallery (if available)
+    if (sample.scrreenshots && sample.scrreenshots.length > 0) {
+        const gallery = document.createElement('div');
+        gallery.className = 'screenshot-gallery';
+
+        sample.scrreenshots.forEach((screenshot, idx) => {
+            const imgWrapper = document.createElement('div');
+            imgWrapper.className = 'screenshot-item';
+
+            const img = document.createElement('img');
+            img.src = `assets/${screenshot}`;
+            img.alt = `${sample.title} screenshot ${idx + 1}`;
+            img.loading = 'lazy';
+
+            // Click to enlarge
+            img.addEventListener('click', () => openLightbox(`assets/${screenshot}`, sample.title));
+
+            imgWrapper.appendChild(img);
+            gallery.appendChild(imgWrapper);
+        });
+
+        card.appendChild(gallery);
+    }
+
     // Links container
     const linksContainer = document.createElement('div');
     linksContainer.className = 'links';
 
-    // Specials section (if available)
+    // Link type mapping (new format)
+    const linkTypes = {
+        code: { text: 'Code', class: 'code' },
+        documentation: { text: 'Documentation', class: 'documentation' },
+        video: { text: 'Video', class: 'video' }
+    };
+
+    // Create link buttons
+    Object.entries(sample.links).forEach(([key, url]) => {
+        if (url && linkTypes[key]) {
+            const link = document.createElement('a');
+            link.href = url;
+            link.className = `link-btn ${linkTypes[key].class}`;
+            link.textContent = linkTypes[key].text;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            linksContainer.appendChild(link);
+        }
+    });
+
+    card.appendChild(linksContainer);
+
+    // Specials section (if available) - at the bottom
     if (sample.specials && sample.specials.length > 0) {
         const specialsContainer = document.createElement('div');
         specialsContainer.className = 'specials-container';
@@ -196,51 +242,6 @@ function createSampleCard(sample, index) {
         card.appendChild(specialsContainer);
     }
 
-    // Screenshot gallery (if available)
-    if (sample.scrreenshots && sample.scrreenshots.length > 0) {
-        const gallery = document.createElement('div');
-        gallery.className = 'screenshot-gallery';
-
-        sample.scrreenshots.forEach((screenshot, idx) => {
-            const imgWrapper = document.createElement('div');
-            imgWrapper.className = 'screenshot-item';
-
-            const img = document.createElement('img');
-            img.src = `assets/${screenshot}`;
-            img.alt = `${sample.title} screenshot ${idx + 1}`;
-            img.loading = 'lazy';
-
-            // Click to enlarge
-            img.addEventListener('click', () => openLightbox(`assets/${screenshot}`, sample.title));
-
-            imgWrapper.appendChild(img);
-            gallery.appendChild(imgWrapper);
-        });
-
-        card.appendChild(gallery);
-    }
-
-    // Link type mapping (new format)
-    const linkTypes = {
-        code: { text: 'Code', class: 'code' },
-        documentation: { text: 'Documentation', class: 'documentation' },
-        video: { text: 'Video', class: 'video' }
-    };
-
-    // Create link buttons
-    Object.entries(sample.links).forEach(([key, url]) => {
-        if (url && linkTypes[key]) {
-            const link = document.createElement('a');
-            link.href = url;
-            link.className = `link-btn ${linkTypes[key].class}`;
-            link.textContent = linkTypes[key].text;
-            link.target = '_blank';
-            link.rel = 'noopener noreferrer';
-            linksContainer.appendChild(link);
-        }
-    });
-
-    card.appendChild(linksContainer);
     return card;
 }
 
