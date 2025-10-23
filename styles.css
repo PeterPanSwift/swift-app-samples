@@ -308,7 +308,7 @@ h1 {
     font-size: 0.95rem;
     transition: all 0.3s ease;
     position: relative;
-    padding-left: 20px;
+    padding-left: 28px;
 }
 
 .special-link::before {
@@ -330,7 +330,7 @@ h1 {
 .special-text {
     color: var(--text-color);
     font-size: 0.95rem;
-    padding-left: 20px;
+    padding-left: 28px;
     position: relative;
 }
 
