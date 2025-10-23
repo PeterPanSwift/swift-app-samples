@@ -132,7 +132,9 @@
         {
             "title": "Earthquakes - App Dev Tutorials",
             "technologies": [
-                "SwiftUI"
+                "SwiftUI",
+                "Network",
+                "Swift Testing"
             ],
             "platform": "iOS 18",
             "links": {
