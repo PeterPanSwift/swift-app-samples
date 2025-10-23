@@ -112,6 +112,22 @@
             ]
         },
         {
+            "title": "Today - App Dev Tutorials",
+            "technologies": [
+                "UIKit"
+            ],
+            "platform": "iOS 18",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/38f0a15014a4ab289e394e45c96bd20b/SavingReminders.zip",
+                "documentation": "https://developer.apple.com/tutorials/app-dev-training/getting-started-with-today"
+            },
+            "scrreenshots": [
+                "pic22.png",
+                "pic23.png",
+                "pic24.png"
+            ]
+        },
+        {
             "title": "Landmarks - SwiftUI Tutorials",
             "technologies": [
                 "SwiftUI"
