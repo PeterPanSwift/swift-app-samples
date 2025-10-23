@@ -17,6 +17,16 @@
                 "pic8.png",
                 "pic9.png",
                 "pic10.png"
+            ],
+            "specials": [
+                {
+                    "title": "SF Symbols Polygon Masking",
+                    "link": "https://medium.com/@apppeterpan/e2814bfa83b1"
+                },
+                {
+                    "title": "Wavy Rhythm with sin & cos",
+                    "link": "https://medium.com/@apppeterpan/372046530f73"
+                }
             ]
         },
         {
@@ -52,6 +62,36 @@
             "scrreenshots": [
                 "pic1.png",
                 "pic2.png"
+            ],
+            "specials": [
+                {
+                    "title": "Character Dialogue Animation",
+                    "link": "https://apppeterpan.medium.com/76c2ba7fe84f"
+                }
+            ]
+        },
+        {
+            "title": "SwiftSticker - Code-along: Elevate an app with Swift concurrency",
+            "technologies": [
+                "SwiftUI",
+                "Concurrency"
+            ],
+            "platform": "iOS 26",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/cf757bad3ba6/CodeAlongElevatingAnAppWithSwiftConcurrency.zip",
+                "video": "https://developer.apple.com/videos/play/wwdc2025/270"
+            },
+            "scrreenshots": [
+                "pic20.png",
+                "pic21.png"
+            ],
+            "specials": [
+                {
+                    "title": "Extract Colors"
+                },
+                {
+                    "title": "Image subject extraction"
+                }
             ]
         },
         {

@@ -1,0 +1,131 @@
+[debug] [2025-10-21T14:34:58.158Z] ----------------------------------------------------------------------
+[debug] [2025-10-21T14:34:58.160Z] Command:       /opt/homebrew/Cellar/node/24.10.0/bin/node /usr/local/bin/firebase init hosting
+[debug] [2025-10-21T14:34:58.160Z] CLI Version:   14.17.0
+[debug] [2025-10-21T14:34:58.160Z] Platform:      darwin
+[debug] [2025-10-21T14:34:58.160Z] Node Version:  v24.10.0
+[debug] [2025-10-21T14:34:58.161Z] Time:          Tue Oct 21 2025 22:34:58 GMT+0800 (Taiwan Standard Time)
+[debug] [2025-10-21T14:34:58.161Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-21T14:34:58.161Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-10-21T14:34:58.177Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-21T14:34:58.177Z] > authorizing via signed-in user (b612firebase@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/shih-yingpan/Documents/Swift App Samples
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-10-21T14:34:58.178Z] Using project from CLI flag: firebase-demo-2-flutter
+[debug] [2025-10-21T14:34:58.178Z] Checked if tokens are valid: false, expires at: 1760545697719
+[debug] [2025-10-21T14:34:58.178Z] Checked if tokens are valid: false, expires at: 1760545697719
+[debug] [2025-10-21T14:34:58.178Z] > refreshing access token with scopes: []
+[debug] [2025-10-21T14:34:58.179Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-21T14:34:58.179Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-21T14:34:58.286Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-21T14:34:58.286Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-21T14:34:58.305Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter [none]
+[debug] [2025-10-21T14:34:58.549Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-10-21T14:34:58.549Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-10-21T14:34:58.587Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter 403
+[debug] [2025-10-21T14:34:58.587Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-10-21T14:34:58.588Z] Request to https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter had HTTP Error: 403, The caller does not have permission
+[debug] [2025-10-21T14:34:58.643Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter had HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project firebase-demo-2-flutter. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-10-21T14:35:37.469Z] ----------------------------------------------------------------------
+[debug] [2025-10-21T14:35:37.475Z] Command:       /opt/homebrew/Cellar/node/24.10.0/bin/node /usr/local/bin/firebase init hosting
+[debug] [2025-10-21T14:35:37.475Z] CLI Version:   14.17.0
+[debug] [2025-10-21T14:35:37.475Z] Platform:      darwin
+[debug] [2025-10-21T14:35:37.475Z] Node Version:  v24.10.0
+[debug] [2025-10-21T14:35:37.475Z] Time:          Tue Oct 21 2025 22:35:37 GMT+0800 (Taiwan Standard Time)
+[debug] [2025-10-21T14:35:37.476Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-21T14:35:37.479Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-21T14:35:37.479Z] > authorizing via signed-in user (b612firebase@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/shih-yingpan/Documents/Swift App Samples
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-10-21T14:35:37.480Z] Using project from CLI flag: firebase-demo-2-flutter
+[debug] [2025-10-21T14:35:37.481Z] Checked if tokens are valid: true, expires at: 1761060897286
+[debug] [2025-10-21T14:35:37.481Z] Checked if tokens are valid: true, expires at: 1761060897286
+[debug] [2025-10-21T14:35:37.481Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter [none]
+[debug] [2025-10-21T14:35:37.884Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter 403
+[debug] [2025-10-21T14:35:37.884Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-10-21T14:35:37.885Z] Request to https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter had HTTP Error: 403, The caller does not have permission
+[debug] [2025-10-21T14:35:37.944Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter had HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project firebase-demo-2-flutter. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-10-21T14:37:48.226Z] ----------------------------------------------------------------------
+[debug] [2025-10-21T14:37:48.232Z] Command:       /opt/homebrew/Cellar/node/24.10.0/bin/node /usr/local/bin/firebase init hosting
+[debug] [2025-10-21T14:37:48.232Z] CLI Version:   14.17.0
+[debug] [2025-10-21T14:37:48.232Z] Platform:      darwin
+[debug] [2025-10-21T14:37:48.232Z] Node Version:  v24.10.0
+[debug] [2025-10-21T14:37:48.232Z] Time:          Tue Oct 21 2025 22:37:48 GMT+0800 (Taiwan Standard Time)
+[debug] [2025-10-21T14:37:48.232Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-21T14:37:48.236Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-21T14:37:48.236Z] > authorizing via signed-in user (b612firebase@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/shih-yingpan/Documents/SwiftAppSamples
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-10-21T14:37:48.237Z] Using project from CLI flag: firebase-demo-2-flutter
+[debug] [2025-10-21T14:37:48.237Z] Checked if tokens are valid: true, expires at: 1761060897286
+[debug] [2025-10-21T14:37:48.237Z] Checked if tokens are valid: true, expires at: 1761060897286
+[debug] [2025-10-21T14:37:48.238Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter [none]
+[debug] [2025-10-21T14:37:48.592Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter 403
+[debug] [2025-10-21T14:37:48.592Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-10-21T14:37:48.593Z] Request to https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter had HTTP Error: 403, The caller does not have permission
+[debug] [2025-10-21T14:37:48.647Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/firebase-demo-2-flutter had HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project firebase-demo-2-flutter. Please make sure the project exists and your account has permission to access it.

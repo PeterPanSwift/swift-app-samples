@@ -275,6 +275,71 @@ h1 {
     content: '📖';
 }
 
+/* Specials 樣式 */
+.specials-container {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(245, 215, 110, 0.1);
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.specials-title {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.specials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.special-item {
+    display: flex;
+    align-items: center;
+}
+
+.special-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 20px;
+}
+
+.special-link::before {
+    content: '🔗';
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.special-link:hover {
+    color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+.special-link:hover::before {
+    transform: scale(1.2);
+}
+
+.special-text {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    padding-left: 20px;
+    position: relative;
+}
+
+.special-text::before {
+    content: '⭐';
+    position: absolute;
+    left: 0;
+}
+
 /* 截圖畫廊樣式 */
 .screenshot-gallery {
     display: flex;

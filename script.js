@@ -99,6 +99,45 @@ function createSampleCard(sample, index) {
     const linksContainer = document.createElement('div');
     linksContainer.className = 'links';
 
+    // Specials section (if available)
+    if (sample.specials && sample.specials.length > 0) {
+        const specialsContainer = document.createElement('div');
+        specialsContainer.className = 'specials-container';
+
+        const specialsTitle = document.createElement('h3');
+        specialsTitle.className = 'specials-title';
+        specialsTitle.textContent = '✨ Specials';
+        specialsContainer.appendChild(specialsTitle);
+
+        const specialsList = document.createElement('div');
+        specialsList.className = 'specials-list';
+
+        sample.specials.forEach(special => {
+            const specialItem = document.createElement('div');
+            specialItem.className = 'special-item';
+
+            if (special.link) {
+                const specialLink = document.createElement('a');
+                specialLink.href = special.link;
+                specialLink.className = 'special-link';
+                specialLink.textContent = special.title;
+                specialLink.target = '_blank';
+                specialLink.rel = 'noopener noreferrer';
+                specialItem.appendChild(specialLink);
+            } else {
+                const specialText = document.createElement('span');
+                specialText.className = 'special-text';
+                specialText.textContent = special.title;
+                specialItem.appendChild(specialText);
+            }
+
+            specialsList.appendChild(specialItem);
+        });
+
+        specialsContainer.appendChild(specialsList);
+        card.appendChild(specialsContainer);
+    }
+
     // Screenshot gallery (if available)
     if (sample.scrreenshots && sample.scrreenshots.length > 0) {
         const gallery = document.createElement('div');
