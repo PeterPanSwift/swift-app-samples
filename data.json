@@ -130,6 +130,24 @@
             ]
         },
         {
+            "title": "Destination Video",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 18",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/2f35504f2d6c/DestinationVideo.zip",
+                "documentation": "https://developer.apple.com/documentation/visionos/destination-video"
+            },
+            "scrreenshots": [
+                "pic30.png",
+                "pic31.png",
+                "pic32.png",
+                "pic33.png",
+                "pic34.png"
+            ]
+        },
+        {
             "title": "Today - App Dev Tutorials",
             "technologies": [
                 "UIKit"
