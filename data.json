@@ -113,6 +113,32 @@
             ]
         },
         {
+            "title": "Alphabetizer - Develop in Swift Tutorials",
+            "technologies": [
+                "SwiftUI",
+                "Observation"
+            ],
+            "platform": "iOS 18",
+            "links": {
+                "code": "https://github.com/PeterPanSwift/AlphabetizerProject",
+                "documentation": "https://developer.apple.com/tutorials/develop-in-swift/complete-a-game-with-logic"
+            },
+            "scrreenshots": [
+                "pic38.png",
+                "pic39.png"
+            ],
+            "specials": [
+                {
+                    "title": "Pair collections with zip",
+                    "link": "https://medium.com/@apppeterpan/02ef0965c32c"
+                },
+                {
+                    "title": "Card flip animation with rotation3DEffect",
+                    "link": "https://medium.com/@apppeterpan/560c752ce9e7"
+                }
+            ]
+        },
+        {
             "title": "Scrumdinger - App Dev Tutorials",
             "technologies": [
                 "SwiftUI"
