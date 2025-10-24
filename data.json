@@ -237,6 +237,23 @@
             "basic": true
         },
         {
+            "title": "RPS - Develop in Swift Explorations",
+            "technologies": [
+                "UIKit"
+            ],
+            "platform": "iOS 17",
+            "links": {
+                "documentation": "https://medium.com/@apppeterpan/f8e807b16637",
+                "book": "https://books.apple.com/tw/book/develop-in-swift-explorations/id6468968126"
+            },
+            "scrreenshots": [
+                "pic56.png",
+                "pic57.png",
+                "pic58.png"
+            ],
+            "basic": true
+        },
+        {
             "title": "Keep Going with Apps — Build Your First App",
             "technologies": [
                 "SwiftUI"
@@ -267,6 +284,23 @@
             "scrreenshots": [
                 "pic42.png",
                 "pic43.png"
+            ],
+            "basic": true
+        },
+        {
+            "title": "Learning SwiftUI - SwiftUI Concepts  Tutorials",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 16",
+            "links": {
+                "documentation": "https://developer.apple.com/tutorials/swiftui-concepts"
+            },
+            "scrreenshots": [
+                "pic52.png",
+                "pic53.png",
+                "pic54.png",
+                "pic55.png"
             ],
             "basic": true
         },

@@ -212,7 +212,8 @@ function createSampleCard(sample, index) {
     const linkTypes = {
         code: { text: 'Code', class: 'code' },
         documentation: { text: 'Documentation', class: 'documentation' },
-        video: { text: 'Video', class: 'video' }
+        video: { text: 'Video', class: 'video' },
+        book: { text: 'Book', class: 'book' }
     };
 
     // Create link buttons

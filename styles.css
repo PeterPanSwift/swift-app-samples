@@ -333,6 +333,10 @@ h1 {
     content: '📖';
 }
 
+.link-btn.book::before {
+    content: '📚';
+}
+
 /* Specials 樣式 */
 .specials-container {
     margin: 20px 0;
