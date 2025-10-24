@@ -237,6 +237,37 @@
             "basic": true
         },
         {
+            "title": "Build with Stacks and Shapes - Everyone Can Code Projects",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 17",
+            "links": {
+                "code": "https://gist.github.com/PeterPanSwift/e56b595d30f204513040cae36a2342e8",
+                "documentation": "https://medium.com/@apppeterpan/b4d4a8eef55e"
+            },
+            "scrreenshots": [
+                "pic59.png",
+                "pic60.png"
+            ],
+            "basic": true
+        },
+        {
+            "title": "Build Custom Shapes - Everyone Can Code Projects",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 17",
+            "links": {
+                "code": "https://gist.github.com/PeterPanSwift/038a23ac1068de408a5c2a1e0425fb40",
+                "documentation": "https://education.apple.com/learning-center/T050360A"
+            },
+            "scrreenshots": [
+                "pic61.png"
+            ],
+            "basic": true
+        },
+        {
             "title": "RPS - Develop in Swift Explorations",
             "technologies": [
                 "UIKit"
