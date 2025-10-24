@@ -237,6 +237,40 @@
             "basic": true
         },
         {
+            "title": "Keep Going with Apps — Build Your First App",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 16",
+            "links": {
+                "code": "https://github.com/AppPeterPan/BuildYourFirstSwiftUIApp",
+                "documentation": "https://medium.com/@apppeterpan/341ba773b997"
+            },
+            "scrreenshots": [
+                "pic44.png",
+                "pic45.png",
+                "pic46.png",
+                "pic47.png"
+            ],
+            "basic": true
+        },
+        {
+            "title": "Why Not Try - Build an iOS app with SwiftUI",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 16",
+            "links": {
+                "code": "https://github.com/0xTim/swift-org-swiftui-tutorial",
+                "documentation": "https://www.swift.org/getting-started/swiftui/"
+            },
+            "scrreenshots": [
+                "pic42.png",
+                "pic43.png"
+            ],
+            "basic": true
+        },
+        {
             "title": "Choose Your Own Story - Sample Apps Tutorials",
             "technologies": [
                 "SwiftUI"
@@ -249,6 +283,24 @@
             "scrreenshots": [
                 "pic40.png",
                 "pic41.png"
+            ],
+            "basic": true
+        },
+        {
+            "title": "About Me - Sample Apps Tutorials",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 15",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/8146a1197e762029e764c987507a6f02/AboutMe.zip",
+                "documentation": "https://developer.apple.com/tutorials/sample-apps/aboutme"
+            },
+            "scrreenshots": [
+                "pic48.png",
+                "pic49.png",
+                "pic50.png",
+                "pic51.png"
             ],
             "basic": true
         }
