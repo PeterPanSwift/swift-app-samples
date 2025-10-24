@@ -201,6 +201,22 @@
             "basic": false
         },
         {
+            "title": "Bringing robust navigation structure to your SwiftUI app",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 18",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/45511f40934b/BringingRobustNavigationStructureToYourSwiftUIApp.zip",
+                "documentation": "https://developer.apple.com/documentation/swiftui/bringing-robust-navigation-structure-to-your-swiftui-app"
+            },
+            "scrreenshots": [
+                "pic62.png",
+                "pic63.png",
+                "pic64.png"
+            ]
+        },
+        {
             "title": "Today - App Dev Tutorials",
             "technologies": [
                 "UIKit"
@@ -268,6 +284,24 @@
             "basic": true
         },
         {
+            "title": "Backyard Birds: Building an app with SwiftData and widgets",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 17",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/7f06a68fb95e/BackyardBirdsBuildingAnAppWithSwiftDataAndWidgets.zip",
+                "documentation": "https://developer.apple.com/documentation/swiftui/backyard-birds-sample"
+            },
+            "scrreenshots": [
+                "pic65.png",
+                "pic66.png",
+                "pic67.png",
+                "pic68.png",
+                "pic69.png"
+            ]
+        },
+        {
             "title": "RPS - Develop in Swift Explorations",
             "technologies": [
                 "UIKit"
@@ -281,6 +315,21 @@
                 "pic56.png",
                 "pic57.png",
                 "pic58.png"
+            ],
+            "basic": true
+        },
+        {
+            "title": "Apple Pie - Develop in Swift Fundamentals",
+            "technologies": [
+                "UIKit"
+            ],
+            "platform": "iOS 17",
+            "links": {
+                "documentation": "https://medium.com/@apppeterpan/59763149efb0",
+                "book": "https://books.apple.com/tw/book/develop-in-swift-fundamentals/id6468967906"
+            },
+            "scrreenshots": [
+                "pic70.png"
             ],
             "basic": true
         },
