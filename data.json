@@ -39,6 +39,10 @@
                 {
                     "title": "Wavy Rhythm with sin & cos",
                     "link": "https://medium.com/@apppeterpan/372046530f73"
+                },
+                {
+                    "title": "Beyond ScrollView with scrollClipDisabled",
+                    "link": "https://medium.com/p/108a5a869f29"
                 }
             ],
             "basic": true
@@ -428,6 +432,23 @@
                 "pic49.png",
                 "pic50.png",
                 "pic51.png"
+            ],
+            "basic": true
+        },
+        {
+            "title": "UIKit Catalog: Creating and customizing views and controls",
+            "technologies": [
+                "UIKit"
+            ],
+            "platform": "iOS 14",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/b311f3c6a450/UIKitCatalogCreatingAndCustomizingViewsAndControls.zip",
+                "documentation": "https://developer.apple.com/documentation/uikit/uikit-catalog-creating-and-customizing-views-and-controls"
+            },
+            "scrreenshots": [
+                "pic72.png",
+                "pic73.png",
+                "pic74.png"
             ],
             "basic": true
         }
