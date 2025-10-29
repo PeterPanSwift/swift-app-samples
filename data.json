@@ -436,6 +436,24 @@
             "basic": true
         },
         {
+            "title": "Date Planner - Sample Apps Tutorials",
+            "technologies": [
+                "SwiftUI"
+            ],
+            "platform": "iOS 15",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/c2a255556cdc23e8277ae7212578e82c/DatePlanner.zip",
+                "documentation": "https://developer.apple.com/tutorials/sample-apps/dateplanner"
+            },
+            "scrreenshots": [
+                "pic75.png",
+                "pic76.png",
+                "pic77.png",
+                "pic78.png"
+            ],
+            "basic": true
+        },
+        {
             "title": "UIKit Catalog: Creating and customizing views and controls",
             "technologies": [
                 "UIKit"
