@@ -11,6 +11,7 @@ async function loadSamples() {
         const data = await response.json();
         allSamples = data.samples;
         displaySamples(allSamples);
+        updateSearchResults(allSamples.length, '');
         setupSearch();
         setupFilters();
     } catch (error) {
