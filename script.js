@@ -133,9 +133,7 @@ function applyFilters() {
 function updateSearchResults(count, query) {
     const searchResults = document.getElementById('search-results');
 
-    if (query === '' && currentFrameworkFilter === 'all' && currentVersionFilter === 'all' && currentLevelFilter === 'all') {
-        searchResults.textContent = '';
-    } else if (count > 0) {
+    if (count > 0) {
         searchResults.textContent = `Found ${count} sample${count > 1 ? 's' : ''}`;
     } else {
         searchResults.textContent = 'No samples found';
