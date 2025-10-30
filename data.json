@@ -319,6 +319,23 @@
             ]
         },
         {
+            "title": "Managing model data in your app",
+            "technologies": [
+                "SwiftUI",
+                "Observation"
+            ],
+            "platform": "iOS 17",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/6c08da4d9562/ManagingModelDataSample.zip",
+                "documentation": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+            },
+            "scrreenshots": [
+                "pic79.png",
+                "pic80.png",
+                "pic81.png"
+            ]
+        },
+        {
             "title": "RPS - Develop in Swift Explorations",
             "technologies": [
                 "UIKit"
