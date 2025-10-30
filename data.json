@@ -157,6 +157,9 @@
                 {
                     "title": "Card flip animation with rotation3DEffect",
                     "link": "https://medium.com/@apppeterpan/560c752ce9e7"
+                },
+                {
+                    "title": "DragGesture"
                 }
             ],
             "basic": true
