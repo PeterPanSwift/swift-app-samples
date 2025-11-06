@@ -135,6 +135,22 @@
             "basic": false
         },
         {
+            "title": "Customizing your app’s navigation bar",
+            "technologies": [
+                "UIKit"
+            ],
+            "platform": "iOS 26",
+            "links": {
+                "code": "https://docs-assets.developer.apple.com/published/8b8c14d97eaf/CustomizingYourAppsNavigationBar.zip",
+                "documentation": "https://developer.apple.com/documentation/UIKit/customizing-your-app-s-navigation-bar"
+            },
+            "scrreenshots": [
+                "pic82.png",
+                "pic83.png"
+            ],
+            "basic": true
+        },
+        {
             "title": "Alphabetizer - Develop in Swift Tutorials",
             "technologies": [
                 "SwiftUI",
