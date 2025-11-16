@@ -43,6 +43,10 @@
                 {
                     "title": "Beyond ScrollView with scrollClipDisabled",
                     "link": "https://medium.com/p/108a5a869f29"
+                },
+                {
+                    "title": "Using Optional’s flatMap to turn multiple optional bindings into a single line",
+                    "link": "https://medium.com/@apppeterpan/21771e71b8d2"
                 }
             ],
             "basic": true
